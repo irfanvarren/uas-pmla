@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewID"
+        android:textSize="20sp"
+        android:text="ID"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewID"
+        android:id="@+id/textViewFirstName"
+        android:textSize="20sp"
+        android:text="Nama Depan"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFirstName"
+        android:id="@+id/textViewLastName"
+        android:textSize="20sp"
+        android:text="Nama Belakang"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLastName"
+
+        android:id="@+id/textViewEmail"
+        android:textSize="20sp"
+        android:text="Email"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEmail"
+
+        android:id="@+id/textViewAvatar"
+        android:textSize="20sp"
+        android:text="Avatar"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editID"
+        android:hint="id"
+        android:layout_toRightOf="@+id/textViewID"
+        android:layout_alignBaseline="@+id/textViewID"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editFirstName"
+        android:hint="Nama Depan"
+        android:layout_toRightOf="@+id/textViewFirstName"
+        android:layout_alignBaseline="@+id/textViewFirstName"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editLastName"
+        android:hint="Nama Belakang"
+        android:layout_toRightOf="@+id/textViewLastName"
+        android:layout_alignBaseline="@+id/textViewLastName"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEmail"
+        android:hint="Email"
+        android:layout_toRightOf="@+id/textViewEmail"
+        android:layout_alignBaseline="@+id/textViewEmail"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAvatar"
+        android:hint="https://link-gambar"
+        android:layout_toRightOf="@+id/textViewAvatar"
+        android:layout_alignBaseline="@+id/textViewAvatar"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnInsert"
+            android:text="Insert"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:text="Back"/>
+
+    </LinearLayout>
+</RelativeLayout>
